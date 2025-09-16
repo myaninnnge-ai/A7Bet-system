@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Master Dashboard</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <h1>Welcome, <%= user %> 🎉</h1>
+    <p>Master Panel Overview</p>
+
+    <!-- Cards -->
+    <div class="cards">
+      <div class="card">
+        <h3>Total Users</h3>
+        <p>120</p>
+      </div>
+      <div class="card">
+        <h3>Active Bets</h3>
+        <p>35</p>
+      </div>
+      <div class="card">
+        <h3>Revenue</h3>
+        <p>$5,400</p>
+      </div>
+    </div>
+
+    <!-- Table -->
+    <div class="table-container">
+      <h2>Recent Bets</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>User</th>
+            <th>Bet</th>
+            <th>Amount</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>JohnDoe</td>
+            <td>Football</td>
+            <td>$100</td>
+            <td>Won</td>
+          </tr>
+          <tr>
+            <td>JaneSmith</td>
+            <td>Basketball</td>
+            <td>$50</td>
+            <td>Lost</td>
+          </tr>
+          <tr>
+            <td>Mike</td>
+            <td>Tennis</td>
+            <td>$75</td>
+            <td>Pending</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Logout -->
+    <p style="margin-top: 20px;">
+      <a href="/master/logout" class="btn">Logout</a>
+    </p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Master Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex">
+
+  <!-- Sidebar -->
+  <aside class="w-64 bg-gray-900 text-white min-h-screen">
+    <div class="p-4 text-2xl font-bold border-b border-gray-700">
+      A7Bet Master
+    </div>
+    <nav class="p-4 space-y-2">
+      <a href="/master/dashboard" class="block px-4 py-2 rounded hover:bg-gray-700">Dashboard</a>
+      <a href="/master/change-password" class="block px-4 py-2 rounded hover:bg-gray-700">Change Password</a>
+      <a href="/master/logout" class="block px-4 py-2 rounded hover:bg-gray-700">Logout</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="flex-1 flex flex-col">
+    
+    <!-- Header -->
+    <header class="bg-white shadow p-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">Welcome, Master</h1>
+      <span class="text-gray-600 text-sm">Dashboard Overview</span>
+    </header>
+
+    <!-- Content -->
+    <main class="p-6 space-y-6">
+      
+      <!-- Stats -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow text-center">
+          <p class="text-gray-500">Total Users</p>
+          <p class="text-2xl font-bold">123</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow text-center">
+          <p class="text-gray-500">Total Bets</p>
+          <p class="text-2xl font-bold">456</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow text-center">
+          <p class="text-gray-500">Revenue</p>
+          <p class="text-2xl font-bold">$789</p>
+        </div>
+      </div>
+
+      <!-- Table -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <h2 class="text-lg font-bold mb-4">Recent Activity</h2>
+        <table class="w-full table-auto border-collapse">
+          <thead>
+            <tr class="bg-gray-200">
+              <th class="border px-4 py-2 text-left">Date</th>
+              <th class="border px-4 py-2 text-left">User</th>
+              <th class="border px-4 py-2 text-left">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border px-4 py-2">2025-08-21</td>
+              <td class="border px-4 py-2">User123</td>
+              <td class="border px-4 py-2">Placed Bet</td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">2025-08-20</td>
+              <td class="border px-4 py-2">User456</td>
+              <td class="border px-4 py-2">Deposit</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </main>
+  </div>
+
+</body>
+</html>
